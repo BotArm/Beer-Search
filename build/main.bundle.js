@@ -17,7 +17,7 @@ var getBeersAPI = function getBeersAPI() {
                 + "<td width = 150px;" + " height = 50px;>" + "<b>Name :</b>" + beers[i].name + "</td>" 
                 + "<td width = 180px;" + " height = 50px; >" + "<b>Yeast :</b>" + beers[i].yeast + "</td>" 
                 + "<td width = 180px;" + " height = 50px; >" + "<b>Tagline :</b>" + beers[i].tagline + "</td>" 
-                + "<td>" + "<b>First Brewed :</b>" + beers[i].first_brewed + "</td>" 
+                + "<td width = 180px;" + " height = 50px; >" + "<b>First Brewed :</b>" + beers[i].first_brewed + "</td>" 
                 + "<td>" + "<b>Description :</b>" + beers[i].description + "</td>" 
                 + "</tr>";
         }
@@ -44,7 +44,7 @@ var getBeerAPIName = function getBeerAPIName(name) {
                 + "<td width = 150px;" + " height = 50px;>" + "<b>Name :</b>" + beers[i].name + "</td>" 
                 + "<td width = 180px;" + " height = 50px; >" + "<b>Yeast :</b>" + beers[i].yeast + "</td>" 
                 + "<td width = 180px;" + " height = 50px; >" + "<b>Tagline :</b>" + beers[i].tagline + "</td>" 
-                + "<td>" + "<b>First Brewed :</b>" + beers[i].first_brewed + "</td>" 
+                + "<td width = 180px;" + " height = 50px; >" + "<b>First Brewed :</b>" + beers[i].first_brewed + "</td>" 
                 + "<td>" + "<b>Description :</b>" + beers[i].description + "</td>" 
                 + "</tr>";
         }
