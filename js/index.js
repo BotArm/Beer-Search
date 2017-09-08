@@ -10,12 +10,12 @@ const getBeersAPI = () => fetch('https://api.punkapi.com/v2/beers')
         result  += "<b>Beers is : </b>" + count + " Item<br>" + "<br>" ;
         result += "<table border='1px' style='border-collapse: collapse; width: 100%'>";
         for (let  i = 0; i < beers.length; i++) {
-            result += "<tr>" + "<td width = 150px;" + " height = 20px;>" + "<b>Name :</b>" + beers[i].name + "</td>"
+            result += "<tr>" + "<td>" + "<image src =" + beers[i].image_url +" "+ "width ="+ '20px ' + " />" + "</td>"
+            + "<td width = 150px;" + " height = 20px;>" + "<b>Name :</b>" + beers[i].name + "</td>"
             + "<td>" + "<b>Abv :</b>" + beers[i].abv + "</td>"
             + "<td width = 180px;" + " height = 20px; >" + "<b>Tagline :</b>" + beers[i].tagline + "</td>"
             + "<td>" + "<b>First Brewed :</b>" + beers[i].first_brewed + "</td>"
-            + "<td>" + "<b>Description :</b>" + beers[i].description + "</td>"
-            + "<td>" + "<image src =" + beers[i].image_url +" "+ "width ="+ '20px ' + " />" + "</td>"+"</tr>";
+            + "<td>" + "<b>Description :</b>" + beers[i].description + "</td>"+"</tr>";
         }
         result += "</table>";
         document.getElementById('name').innerHTML = result;
