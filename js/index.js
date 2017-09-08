@@ -12,7 +12,7 @@ const getBeersAPI = () => fetch('https://api.punkapi.com/v2/beers')
         for (let  i = 0; i < beers.length; i++) {
             result += "<tr>" + "<td>" + "<image src =" + beers[i].image_url +" "+ "width ="+ '50px ' + " />" + "</td>"
             + "<td width = 150px;" + " height = 20px;>" + "<b>Name :</b>" + beers[i].name + "</td>"
-            + "<td width = 180px;" + " height = 50px; >" + "<b>Yeast :</b>" + beers[i].yeast + "</td>"
+            + "<td width = 180px;" + " height = 50px; >" + "<b>Yeast :</b>" + beers[i].ingredients.yeast + "</td>"
             + "<td width = 180px;" + " height = 20px; >" + "<b>Tagline :</b>" + beers[i].tagline + "</td>"
             + "<td width = 180px;" + " height = 50px; >" + "<b>First Brewed :</b>" + beers[i].first_brewed + "</td>"
             + "<td>" + "<b>Description :</b>" + beers[i].description + "</td>"+"</tr>";
@@ -34,7 +34,7 @@ const getBeerAPIName = (name) => fetch(`https://api.punkapi.com/v2/beers/?beer_n
         for (let  i = 0; i < beers.length; i++) {
             result += "<tr>" + "<td>" + "<image src =" + beers[i].image_url +" "+ "width ="+ '20px ' + " />" + "</td>"
             + "<td width = 150px;"+ " height = 20px;>" + "<b>Name :</b>" + beers[i].name + "</td>" 
-            + "<td width = 180px;" + " height = 50px; >" + "<b>Yeast :</b>" + beers[i].yeast + "</td>"
+            + "<td width = 180px;" + " height = 50px; >" + "<b>Yeast :</b>" + beers[i].ingredients.yeast + "</td>"
             + "<td width = 180px;" + " height = 20px; >" + "<b>Tagline :</b>" + beers[i].tagline + "</td>"
             + "<td width = 180px;" + " height = 50px; >" + "<b>First Brewed :</b>" + beers[i].first_brewed + "</td>"
             + "<td >" + "<b>Description :</b>" + beers[i].description + "</td>"+"</tr>";
