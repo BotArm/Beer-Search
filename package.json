@@ -1,0 +1,27 @@
+{
+  "name": "bears",
+  "version": "1.0.0",
+  "description": "Beer-Search",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile": "babel --presets es2015 js/index.js -o build/main.bundle.js",
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BotArm/Beer-Search.git"
+  },
+  "author": "arm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Botarm/Beer-Search/issues"
+  },
+  "homepage": "https://github.com/Botarm/Beers-Search#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "http-server": "^0.10.0"
+  }
+}
